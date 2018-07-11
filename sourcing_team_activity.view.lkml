@@ -128,6 +128,6 @@ view: sourcing_team_activity {
 
   measure: sum {
     type: sum
-    drill_fields: [assessing_total]
+    sql: ${assessing_total};;
   }
 }
