@@ -126,8 +126,8 @@ view: sourcing_team_activity {
     sql: ${TABLE}.TeamMember ;;
   }
 
-  measure: count {
-    type: count
-    drill_fields: [process_name]
+  measure: sum {
+    type: sum
+    drill_fields: [assessing_total]
   }
 }
